@@ -1,7 +1,7 @@
 object AverageCalculator {
-  def calculateAverage(num1: Int, num2: Int): Double = {
+  def calculateAverage(num1: Int, num2: Int): Float = {
     val average = (num1 + num2) / 2.0
-    BigDecimal(average).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
+    BigDecimal(average).setScale(2, BigDecimal.RoundingMode.HALF_UP).toFloat
   }
 
   def main(args: Array[String]): Unit = {
