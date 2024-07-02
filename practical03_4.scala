@@ -10,7 +10,7 @@ object SumofIntegers {
     var inputIntegers: List[Int] = Nil // Initialize an empty list
 
     for (i <- 1 to integerNum) {
-      println(s"Enter No. $$i:")
+      println(s"Enter No. $i:")
       val input = scala.io.StdIn.readInt()
       inputIntegers = input :: inputIntegers // Add input to the list
     }
